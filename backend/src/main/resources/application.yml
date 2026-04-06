@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: lti-ats
+  datasource:
+    url: jdbc:postgresql://postgres:5432/lti_ats
+    username: lti
+    password: lti_password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8080
